@@ -6,7 +6,9 @@
 void yyerror(const char *s);
 int yylex();
 %}
-
+%code requires {
+    #include "ast.h"
+}
 /* ---------- UNION ---------- */
 %union {
     int num;
@@ -109,4 +111,5 @@ int main() {
 /* ---------- ERROR FUNCTION ---------- */
 void yyerror(const char *s) {
     printf("Syntax Error: %s\n", s);
+
 }
