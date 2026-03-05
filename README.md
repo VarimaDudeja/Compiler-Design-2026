@@ -7,6 +7,7 @@ Working:
 2. This output is then stored in input.vl file, which then goes through all the phases of compiler and final output as C code is generated.
    
 **Lexical and Syntax Analysis Phase**
+
   The lexical and syntax phases of the compiler are implemented using Flex and Bison.
   
 4. The lexer tokenizes the normalized input file (input.vl)
